@@ -1,3 +1,10 @@
-export default function foo() {
-	console.log('foo');
-}
+define(function() {
+	return {
+		foo () {
+			console.log('foo');
+		},
+		bar () {
+			console.log('bar');
+		}
+	};
+});
