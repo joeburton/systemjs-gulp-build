@@ -10,6 +10,8 @@
         // });
 
         System.import('dist/outfile.js').then(function(file) {
+            // call the initial module to kick things off... forget this forget everything
+            // no need to call inital module when files aren't squished and kicked
             System.import('app/js/main.js')
         });
 
