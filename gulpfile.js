@@ -5,7 +5,7 @@ var Builder = require('systemjs-builder');
 gulp.task('build', function () {
     
     var builder = new Builder('', 'app/js/config.js');
-
+    
     builder
     .bundle('app/js/main.js', 'dist/outfile.js')
     .then(function() {
