@@ -5,13 +5,13 @@
     <script src="bower_components/system.js/dist/system.js"></script>
     <script>
         
-        System.import('app/js/main.js').then(function(res) {
-            console.log(res);
-        });
-
-        // System.import('app/js/main.js').then(function() {
-        //     System.import('app/js/outfile.js')
+        // System.import('app/js/main.js').then(function(res) {
+        //     console.log(res);
         // });
+
+        System.import('dist/outfile.js').then(function(file) {
+            System.import('app/js/main.js')
+        });
 
     </script>
 

@@ -7,7 +7,7 @@ gulp.task('build', function () {
     var builder = new Builder('', 'app/js/config.js');
 
     builder
-    .bundle('app/js/main.js', 'app/js/outfile.js')
+    .bundle('app/js/main.js', 'dist/outfile.js')
     .then(function() {
         console.log('Build complete');
     })
