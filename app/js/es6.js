@@ -1,10 +1,10 @@
 define(function() {
 	return {
 		foo () {
-			console.log('foo');
+			return 'foo';
 		},
 		bar () {
-			console.log('bar');
+			return 'bar';
 		}
 	};
 });

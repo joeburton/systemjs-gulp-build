@@ -1,5 +1,6 @@
-var gulp = require('gulp');
-var Builder = require('systemjs-builder');
+const gulp = require('gulp');
+const Builder = require('systemjs-builder');
+const jsdoc = require('gulp-jsdoc3');
 
 // bundle the SystemJS files to one single bundle standalone file
 gulp.task('build', function () {
@@ -17,5 +18,6 @@ gulp.task('build', function () {
     });
 
 });
+
 
 gulp.task('default', ['build']);
